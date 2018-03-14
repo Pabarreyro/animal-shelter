@@ -1,14 +1,49 @@
-.pet{
+@keyframes rainbow {
+  0%   {background-color: #ff0000;}
+  14%  {background-color: #ff7700;}
+  28%  {background-color: #ffdd00;}
+  42% {background-color: #00ff00;}
+  56% {background-color: #0000ff;}
+  70% {background-color: #8a2be2;}
+  84% {background-color: #c77df3;}
+  98% {background-color: #ff0000;}
+}
+
+@keyframes rainbow-dot {
+  0%   {border: 4px dotted #ff0000;}
+  14%  {border: 4px dotted #ff7700;}
+  28%  {border: 4px dotted #ffdd00;}
+  42% {border: 4px dotted #00ff00;}
+  56% {border: 4px dotted #0000ff;}
+  70% {border: 4px dotted #8a2be2;}
+  84% {border: 4px dotted #c77df3;}
+  98% {border: 4px dotted #ff0000;}
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.top {
+  text-align: center;
+  border: 4px dotted purple;
+  animation: rainbow-dot 14s infinite;
+}
+
+.pet {
   border: 1px solid black;
   float: left;
-  width: 375px;
+  width: 23.6vw;
   height: 670px;
   padding: 7px;
   margin: 4px;
+  text-shadow: 2px 2px black;
+  animation: rainbow 14s infinite;
 }
 
 img {
   width: 300px;
+  max-width: 100%;
 }
 
 img:hover {
@@ -17,11 +52,11 @@ img:hover {
 }
 
 .pet h3 {
-  color: blue;
+  color: white;
 }
 
 .pet p {
-  color: green;
+  color: white;
 }
 
 span {
